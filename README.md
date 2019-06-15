@@ -6,4 +6,4 @@
 
 - I do not own any information or data presented on this page.
 
-- Please visit the official website here for actual use: Official website here: 
+- Please visit the official website here for actual use: https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology/taking-control
