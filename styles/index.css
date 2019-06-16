@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+/* Color classes */
+.text-white {
+    color: white;
+}
+.text-black {
+    color: black;
+}
+.text-gray {
+    color: gray;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-gray {
+    background-color: gray;
+}
+.bg-black {
+    background-color: black;
+}
+
+/* Display format classes */
+.no-bullet {
+    list-style: none;
+}
+.hide-link {
+    text-decoration-line: none;
+}
+.hide-link:hover {
+    text-decoration: underline;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.item-seperator {
+    border-right: solid 1px;
+    padding: 0em 0.5em;
+}
+.item-seperator:last-child {
+    border-right: none;
+}
