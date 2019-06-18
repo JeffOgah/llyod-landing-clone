@@ -1,10 +1,32 @@
+@font-face {
+    font-family: "NHaasGroteskTXStd-55Rg";
+    src: url(/styles/fonts/309A9E_0_0.woff2);
+    src: url(/styles/fonts/309A9E_1_0.woff2);
+}
 html {
     font-family: 'NHaasGroteskTXStd-55Rg';
-    font-size: 16px;
+    font-size: 14px;
 }
 body {
     padding: 0;
     margin: 0;
+}
+nav { 
+    display: flex;
+}
+nav div {
+    flex: 1 1 auto;
+}
+.nav-menu {
+    vertical-align: baseline;
+    height: 2.3em;
+}
+.top-nav {
+    margin: 0.7em 0;
+    font-size: 0.9em;
+}
+.header {
+    top: 0;
 }
 h1 {
     font-weight: bold;
@@ -21,6 +43,20 @@ p {
 }
 section {
     padding: 0.5em 10em;
+}
+.header {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.logo {
+    background: url(/images/lloyds_logo.svg) no-repeat;
+    background-size: 6em;
+    overflow: hidden;
+    display: inline-block;
+    height: 3em;
+    object-fit: fill;
+    color: transparent;
+
 }
 .no-margin {
     margin: 0;
@@ -129,9 +165,6 @@ section {
 .bottom-border {
     border-bottom: solid #d8d8da 1px;
 }
-.top-nav {
-    margin: 0.2em;
-}
 .div-seperator {
     margin: 1em 0 2em 0;
 }
@@ -148,8 +181,69 @@ section {
 }
 #btn-share {
     cursor: pointer;
+    color: #0c4ab5;
+    font-weight: bold;
+    font-size: 1.1em;
     box-sizing: border-box;
     margin-bottom: 0 !important;
     padding: 0.2em 1em;
     width: 10em;
+}
+.search {
+    background-color: #f1f1f1;
+    height: 2.3em;
+    padding-left: 0.4em;
+    border-bottom: solid 1px black;
+}
+.search input {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border: none;
+    width: 6em;
+    height: 100%;
+    outline: none;
+}
+.search button {
+    background-color: #f1f1f1;
+    border: none;
+    width: fit-content;
+    padding-left: 0;
+}
+.fa-search {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1.4em;
+}
+.secondary-nav {
+    display: flex;
+    height: 2.5em;
+    margin-top: 1em;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+}
+.nav-dropdown {
+    box-sizing: border-box;
+    border-right: solid 1px white;
+    flex: 1 1 auto;
+
+}
+.second-nav {
+    width: 100%;
+    font-weight: bold;
+    line-height: 2.5em;
+
+}
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    margin: 0;
+    left: 10em;
+    right: 10.1em;
+    z-index: 1;
+    border: solid 1px black;
+
+}
+.dropdown-content  {
+    display: none;
 }
