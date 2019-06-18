@@ -1,5 +1,28 @@
+html {
+    font-family: 'NHaasGroteskTXStd-55Rg';
+    font-size: 16px;
+}
 body {
     padding: 0;
+    margin: 0;
+}
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+h2 {
+    line-height: 1em;
+}
+p {
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.3em;
+}
+section {
+    padding: 0.5em 10em;
+}
+.no-margin {
     margin: 0;
 }
 /* Color classes */
@@ -15,16 +38,21 @@ body {
 .bg-white {
     background-color: white;
 }
-.bg-gray {
-    background-color: gray;
+.bg-light {
+    background-color: #f1f1f1;
 }
-.bg-black {
+.bg-dark {
+    background-color: #141414;
+}
+.btn-share:active {
     background-color: black;
+    color: white;
 }
-
 /* Display format classes */
 .no-bullet {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .hide-link {
     text-decoration-line: none;
@@ -40,6 +68,88 @@ body {
     border-right: solid 1px;
     padding: 0em 0.5em;
 }
+.item-seperator:first-child {
+    padding-left: 0;
+}
 .item-seperator:last-child {
     border-right: none;
+}
+.fa {
+    box-sizing: border-box;
+    padding: 0.3em;
+    margin-right: 0.8em;
+
+}
+.fa-twitter {
+    background-color: #1da1f2;
+}
+.fa-linkedin {
+    background-color: #0077b5;
+}
+.fa-facebook {
+    background-color: #3b5998;
+    padding: 0.3em 0.5em;
+}
+.fa-youtube {
+    background-color: #ff0000;
+}
+.fa-envelope {
+    color: white;
+    background-color: grey;
+}
+.article {
+    display: grid;
+    grid-template-areas: "image text";
+    margin: 1em 0 4em 0;
+    width: 85%;
+}
+.article-image {
+    grid-area: "image";
+    margin-left: 2em;
+}
+.article-image img {
+    -webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+}
+.article-text {
+    grid-area: "text";
+    margin-left: 2em;
+}
+.article-text p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.btn-download {
+    background-color: #0a4bb7;
+    border: none;
+    margin: 0;
+    padding: 1.2em;
+}
+.bottom-border {
+    border-bottom: solid #d8d8da 1px;
+}
+.top-nav {
+    margin: 0.2em;
+}
+.div-seperator {
+    margin: 1em 0 2em 0;
+}
+.text-seperator {
+    margin: 1em 0;
+}
+#share {
+    display: none;
+    background-color: #141414;
+    min-width: fit-content;
+    width: 10em;
+    padding: 1em;
+    margin-top: 0 !important;
+}
+#btn-share {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+    padding: 0.2em 1em;
+    width: 10em;
 }
