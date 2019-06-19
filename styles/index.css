@@ -368,6 +368,9 @@ p {
     .header {
         position: relative;
     }   
+    . secondary-nav {
+        display: none;
+    }
 }
      
 @media (max-width: 1400px){
