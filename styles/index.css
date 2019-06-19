@@ -222,11 +222,13 @@ section {
     align-content: center;
     vertical-align: middle;
 }
-.nav-dropdown {
+.nav-panel {
     box-sizing: border-box;
     border-right: solid 1px white;
     flex: 1 1 auto;
-
+}
+.nav-dropdown {
+    display: block;
 }
 .second-nav {
     width: 100%;
@@ -234,7 +236,13 @@ section {
     line-height: 2.5em;
 
 }
-.nav-dropdown:hover .dropdown-content {
+.nav-dropdown:hover {
+    background-color: #f1f1f1;
+}
+.nav-dropdown:hover .second-nav {
+    color: #141414;
+}
+.nav-panel:hover .dropdown-content {
     display: block;
     position: absolute;
     margin: 0;
@@ -242,6 +250,7 @@ section {
     right: 10.1em;
     z-index: 1;
     border: solid 1px black;
+    background-color: #f1f1f1;
 
 }
 .dropdown-content  {
