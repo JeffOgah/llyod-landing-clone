@@ -272,3 +272,25 @@ section {
     text-align: start;
     line-height: 2.5em;
 }
+.continent {
+    display: block;
+    width: 20%;
+    margin-bottom: 1.2em;
+}
+.country-list {
+    display: none;
+    width: 30%;
+}
+.country-list ul {
+    display: flex;
+}
+.country-list ul li {
+    width: 25%;
+}
+.continent:hover .country-list {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 4em;
+    width: 80%;
+}
