@@ -305,13 +305,13 @@ p {
     margin: 0 !important;
     font-size: 1.4em;
 }
+.sm-icons {
+    display: none;
+}
 /* End Icons & Buttons */
 /***************************************/
 /* Media Queries*/
 @media (max-width: 640px){
-    section {
-        padding: 0.5em 2em;
-    }
     .article-image {
         display: none;
     }
@@ -333,24 +333,17 @@ p {
     .item-seperator {
         padding: 0;
     }
+}
+
+@media (max-width: 1024px){
+    section {
+        padding: 0.5em 1em;
+    }
     .nav-menu {
         display: none;
     }
     .search {
-        display: block;
-        position: absolute;
-        top: 3em;
-        left: 0;
-        width: 100%;
-        border: none;
-        height: 3.5em;
-    }
-    .search input {
-        width: 75%;
-        margin-left: 2em;
-    }
-    .search button {
-        font-size: 1.2em;
+        display: none;
     }
     .search-sm {
         margin: 0.2em 0.5em 0 0 !important;
@@ -373,26 +366,11 @@ p {
     }
     .header {
         position: relative;
+    }   
+}
+     
+@media (max-width: 1400px){
+    section {
+        padding: 0.5em calc(5%);
     }
-    .secondary-nav {
-        display: none;
-    }
-}
-     
-@media (min-width: 768px){
-     
-    ...
-     
-}
-     
-@media (min-width: 1024px){
-     
-    ...
-     
-}
-     
-@media (min-width: 1200px){
-     
-    ...
-     
 }
