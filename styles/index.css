@@ -3,6 +3,7 @@
     src: url(fonts/309A9E_0_0.woff2);
     src: url(fonts/309A9E_1_0.woff2);
 }
+/* Element Styles */
 html {
     font-family: 'NHaasGroteskTXStd-55Rg';
     font-size: 14px;
@@ -11,22 +12,14 @@ body {
     padding: 0;
     margin: 0;
 }
+section {
+    padding: 0.5em 10em;
+}
 nav { 
     display: flex;
 }
 nav div {
     flex: 1 1 auto;
-}
-.nav-menu {
-    vertical-align: baseline;
-    height: 2.3em;
-}
-.top-nav {
-    margin: 0.7em 0;
-    font-size: 0.9em;
-}
-.header {
-    top: 0;
 }
 h1 {
     font-weight: bold;
@@ -41,27 +34,45 @@ p {
     margin: 0;
     line-height: 1.3em;
 }
-section {
-    padding: 0.5em 10em;
-}
-.header {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-.logo {
-    background: url(../images/lloyds_logo.svg) no-repeat;
-    background-size: 6em;
-    overflow: hidden;
-    display: inline-block;
-    height: 3em;
-    object-fit: fill;
-    color: transparent;
-
-}
+/* End Element Styles */
+/***************************************/
+/* General Styles- Color, Display etc */
 .no-margin {
     margin: 0;
 }
-/* Color classes */
+.div-seperator {
+    margin: 1em 0 2em 0;
+}
+.text-seperator {
+    margin: 1em 0;
+}
+.no-bullet {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hide-link {
+    text-decoration-line: none;
+}
+.hide-link:hover {
+    text-decoration: underline;
+}
+.inline-block {
+    display: inline-block;
+}
+.item-seperator {
+    border-right: solid 1px;
+    padding: 0em 0.5em;
+}
+.item-seperator:first-child {
+    padding-left: 0;
+}
+.item-seperator:last-child {
+    border-right: none;
+}
+.bottom-border {
+    border-bottom: solid #d8d8da 1px;
+}
 .text-white {
     color: white;
 }
@@ -84,135 +95,32 @@ section {
     background-color: black;
     color: white;
 }
-/* Display format classes */
-.no-bullet {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* End General Styles */
+/***************************************/
+/* Header & Nav Styles */
+.header {
+    top: 0;
 }
-.hide-link {
-    text-decoration-line: none;
+.header {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
-.hide-link:hover {
-    text-decoration: underline;
-}
-.inline-block {
+.logo {
+    background: url(../images/lloyds_logo.svg) no-repeat;
+    background-size: 6em;
+    overflow: hidden;
     display: inline-block;
+    height: 3em;
+    object-fit: fill;
+    color: transparent;
 }
-
-.item-seperator {
-    border-right: solid 1px;
-    padding: 0em 0.5em;
-}
-.item-seperator:first-child {
-    padding-left: 0;
-}
-.item-seperator:last-child {
-    border-right: none;
-}
-.fa {
-    box-sizing: border-box;
-    padding: 0.3em;
-    margin-right: 0.8em;
-
-}
-.fa-twitter {
-    background-color: #1da1f2;
-}
-.fa-linkedin {
-    background-color: #0077b5;
-}
-.fa-facebook {
-    background-color: #3b5998;
-    padding: 0.3em 0.5em;
-}
-.fa-youtube {
-    background-color: #ff0000;
-}
-.fa-envelope {
-    color: white;
-    background-color: grey;
-}
-.article {
-    display: grid;
-    grid-template-areas: "image text";
-    margin: 1em 0 4em 0;
-    width: 85%;
-}
-.article-image {
-    grid-area: "image";
-    margin-left: 2em;
-}
-.article-image img {
-    -webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
-    box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
-}
-.article-text {
-    grid-area: "text";
-    margin-left: 2em;
-}
-.article-text p {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-}
-.btn-download {
-    background-color: #0a4bb7;
-    border: none;
-    margin: 0;
-    padding: 1.2em;
-}
-.bottom-border {
-    border-bottom: solid #d8d8da 1px;
-}
-.div-seperator {
-    margin: 1em 0 2em 0;
-}
-.text-seperator {
-    margin: 1em 0;
-}
-#share {
-    display: none;
-    background-color: #141414;
-    min-width: fit-content;
-    width: 10em;
-    padding: 1em;
-    margin-top: 0 !important;
-}
-#btn-share {
-    cursor: pointer;
-    color: #0c4ab5;
-    font-weight: bold;
-    font-size: 1.1em;
-    box-sizing: border-box;
-    margin-bottom: 0 !important;
-    padding: 0.2em 1em;
-    width: 10em;
-}
-.search {
-    background-color: #f1f1f1;
+.nav-menu {
+    vertical-align: baseline;
     height: 2.3em;
-    padding-left: 0.4em;
-    border-bottom: solid 1px black;
 }
-.search input {
-    background-color: #f1f1f1;
-    box-sizing: border-box;
-    border: none;
-    width: 6em;
-    height: 100%;
-    outline: none;
-}
-.search button {
-    background-color: #f1f1f1;
-    border: none;
-    width: fit-content;
-    padding-left: 0;
-}
-.fa-search {
-    padding: 0 !important;
-    margin: 0 !important;
-    font-size: 1.4em;
+.top-nav {
+    margin: 0.7em 0;
+    font-size: 0.9em;
 }
 .secondary-nav {
     display: flex;
@@ -293,4 +201,198 @@ section {
     right: 0;
     top: 4em;
     width: 80%;
+}
+/* End Header Styles */
+/***************************************/
+/* Body Styles */
+.article {
+    display: grid;
+    grid-template-areas: "image text";
+    margin: 1em 0 4em 0;
+    width: 85%;
+}
+.article-image {
+    grid-area: "image";
+    margin-left: 2em;
+}
+.article-image img {
+    -webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+}
+.article-text {
+    grid-area: "text";
+    margin-left: 2em;
+}
+.article-text p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+/* End Body */
+/***************************************/
+/* Icon & Buttons */
+.fa {
+    box-sizing: border-box;
+    padding: 0.3em;
+    margin-right: 0.8em;
+
+}
+.fa-twitter {
+    background-color: #1da1f2;
+}
+.fa-linkedin {
+    background-color: #0077b5;
+}
+.fa-facebook {
+    background-color: #3b5998;
+    padding: 0.3em 0.5em;
+}
+.fa-youtube {
+    background-color: #ff0000;
+}
+.fa-envelope {
+    color: white;
+    background-color: grey;
+}
+
+.btn-download {
+    background-color: #0a4bb7;
+    border: none;
+    margin: 0;
+    padding: 1.2em;
+}
+
+#share {
+    display: none;
+    background-color: #141414;
+    min-width: fit-content;
+    width: 10em;
+    padding: 1em;
+    margin-top: 0 !important;
+}
+#btn-share {
+    cursor: pointer;
+    color: #0c4ab5;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+    padding: 0.2em 1em;
+    width: 10em;
+}
+.search {
+    background-color: #f1f1f1;
+    height: 2.3em;
+    padding-left: 0.4em;
+    border-bottom: solid 1px black;
+}
+.search input {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border: none;
+    width: 6em;
+    height: 100%;
+    outline: none;
+}
+.search button {
+    background-color: #f1f1f1;
+    border: none;
+    width: fit-content;
+    padding-left: 0;
+}
+.fa-search {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1.4em;
+}
+/* End Icons & Buttons */
+/***************************************/
+/* Media Queries*/
+@media (max-width: 640px){
+    section {
+        padding: 0.5em 2em;
+    }
+    .article-image {
+        display: none;
+    }
+    .article-text {
+        margin: 0;
+        padding: 0;
+    }
+    .no-bullet {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        border-bottom: solid 0.2px white;
+    }
+    .no-bullet li {
+        display: block;
+        line-height: 2em;
+        border: none;
+    }
+    .item-seperator {
+        padding: 0;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .search {
+        display: block;
+        position: absolute;
+        top: 3em;
+        left: 0;
+        width: 100%;
+        border: none;
+        height: 3.5em;
+    }
+    .search input {
+        width: 75%;
+        margin-left: 2em;
+    }
+    .search button {
+        font-size: 1.2em;
+    }
+    .search-sm {
+        margin: 0.2em 0.5em 0 0 !important;
+        font-size: 1.8em;
+    }
+    .fa-user {
+        color: #bdbdc2;
+        font-size: 1.8em;
+        margin: 0.2em 0.5em 0 0;
+
+        padding: 0;
+    }
+    .fa-bars {
+        font-size: 1.8em;
+        padding: 0;
+        margin: 0.2em 0.5em 0 0;
+    }
+    .sm-icons {
+        text-align: right;
+    }
+    .header {
+        position: relative;
+    }
+    .secondary-nav {
+        display: none;
+    }
+}
+     
+@media (min-width: 768px){
+     
+    ...
+     
+}
+     
+@media (min-width: 1024px){
+     
+    ...
+     
+}
+     
+@media (min-width: 1200px){
+     
+    ...
+     
 }
