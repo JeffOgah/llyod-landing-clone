@@ -234,13 +234,12 @@ section {
     width: 100%;
     font-weight: bold;
     line-height: 2.5em;
-
 }
 .nav-dropdown:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
 }
 .nav-dropdown:hover .second-nav {
-    color: #141414;
+    color: #141414 !important;
 }
 .nav-panel:hover .dropdown-content {
     display: block;
@@ -249,10 +248,27 @@ section {
     left: 10em;
     right: 10.1em;
     z-index: 1;
-    border: solid 1px black;
-    background-color: #f1f1f1;
-
+    -webkit-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+    padding: 0 2em 1em 2em;
+    text-align: left;
 }
 .dropdown-content  {
     display: none;
+}
+.dropdown-content h2 {
+    font-size: 1em;
+    padding: 1em 0;
+    border-bottom: solid 1px black;
+}
+.dropdown-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.dropdown-content ul li {
+    width: 30%;
+    text-align: start;
+    line-height: 2.5em;
 }
